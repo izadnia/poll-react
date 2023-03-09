@@ -3,7 +3,7 @@ import React from "react";
 function Page1() {
   return (
     <div>
-      <div>Welcome </div>
+      <div ><h1>Welcome</h1> </div>
       <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In

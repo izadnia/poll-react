@@ -12,8 +12,8 @@ function SlidePage() {
             alt="Mythrill"
             target="_blank"
           >
-            <div class="card">
-              <div class="wrapper">
+            <div className="card">
+              <div className="wrapper">
                 <div className="cover-text">
                     <p className="text">
                       General
@@ -23,7 +23,7 @@ function SlidePage() {
 
               <img
                 src="src/assets/progress.png"
-                class="character"
+                className="character"
               />
             </div>
           </a>
@@ -34,8 +34,8 @@ function SlidePage() {
             alt="Mythrill"
             target="_blank"
           >
-            <div class="card">
-              <div class="wrapper">
+            <div className="card">
+              <div className="wrapper">
                 <div className="cover-text">
                     <p className="text">
                       Quality
@@ -45,7 +45,7 @@ function SlidePage() {
 
               <img
                 src="src/assets/desktop.png"
-                class="character"
+                className="character"
               />
             </div>
           </a>
@@ -56,8 +56,8 @@ function SlidePage() {
             alt="Mythrill"
             target="_blank"
           >
-            <div class="card">
-              <div class="wrapper">
+            <div className="card">
+              <div className="wrapper">
                 <div className="cover-text">
                     <p className="text">
                       Production
@@ -67,7 +67,7 @@ function SlidePage() {
 
               <img
                 src="src/assets/dashboard.png"
-                class="character"
+                className="character"
               />
             </div>
           </a>
@@ -78,8 +78,8 @@ function SlidePage() {
             alt="Mythrill"
             target="_blank"
           >
-            <div class="card">
-              <div class="wrapper">
+            <div className="card">
+              <div className="wrapper">
                 <div className="cover-text">
                     <p className="text">
                       Devices
@@ -89,7 +89,7 @@ function SlidePage() {
 
               <img
                 src="src/assets/devices.png"
-                class="character"
+                className="character"
               />
             </div>
           </a>
@@ -100,8 +100,8 @@ function SlidePage() {
             alt="Mythrill"
             target="_blank"
           >
-            <div class="card">
-              <div class="wrapper">
+            <div className="card">
+              <div className="wrapper">
                 <div className="cover-text">
                     <p className="text">
                       Delay
@@ -111,7 +111,7 @@ function SlidePage() {
 
               <img
                 src="src/assets/clock.png"
-                class="character"
+                className="character"
               />
             </div>
           </a>
@@ -122,8 +122,8 @@ function SlidePage() {
             alt="Mythrill"
             target="_blank"
           >
-            <div class="card">
-              <div class="wrapper">
+            <div className="card">
+              <div className="wrapper">
                 <div className="cover-text">
                     <p className="text">
                       Comment
@@ -133,7 +133,7 @@ function SlidePage() {
 
               <img
                 src="src/assets/personal.png"
-                class="character"
+                className="character"
               />
             </div>
           </a>

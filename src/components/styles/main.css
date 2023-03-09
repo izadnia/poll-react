@@ -1,29 +1,49 @@
 :root {
-    --card-height: 300px;
-    --card-width: calc(var(--card-height) / 1.5);
-  }
-  * {
-    box-sizing: border-box;
-  }
-  body {
-background-color:cadetblue;
-  }
-  .main{
-    width: 90%;
-    max-width: 700px;
-    margin: 0 auto;
-    background-color: aliceblue;
-    border-radius: 15px;
-    padding: 20px;
-  }
-  .columns{
-    display: flex;
-    justify-content: space-between;
-  }
-.questions{
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: cadetblue;
+}
+.main {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 20px;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+.questions {
   width: 75%;
   padding: 10px;
 }
-  .Slide{
-    width: 25%;
-  }
+.controllers {
+  display: flex;
+}
+button{
+  margin: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(88, 141, 143);
+  border: 0;
+  padding: 10px;
+  border-radius: 7px;
+}
+button:hover{
+  background-color: rgb(0, 109, 163);
+  transition: all 0.5s;
+  box-shadow: 2px 5px 22px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 5px 22px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 5px 22px -6px rgba(0, 0, 0, 0.75);
+}
+
+.Slide {
+  width: 25%;
+}
