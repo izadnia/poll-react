@@ -4,6 +4,13 @@ import "./styles/side.css";
 function SlidePage(status) {
 
   let data =[{
+    
+    'id':'-1',
+    'name':'welcome',
+    'src':'src/assets/progress.png',
+    'status':'null'
+  },{
+
     'id':'0',
     'name':'General',
     'src':'src/assets/progress.png',
@@ -25,7 +32,7 @@ function SlidePage(status) {
     'status':'null'
   },{
     'id':'4',
-    'name':'Delay',
+    'name':'Processor',
     'src':'src/assets/clock.png',
     'status':'null'
   },{

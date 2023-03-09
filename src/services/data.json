@@ -6,15 +6,18 @@
       "title": "General",
       "questions": [
         {
+          "Q-num": "0-1",
           "type": "text",
-          "question": "Could you please mention the last device that you baught ?"
+          "question": "Could you please mention the last device that you have recently baught ?"
         },
         {
+          "Q-num": "0-2",
           "type": "single",
           "question": "have you ever taught about changing your phone?",
           "choices": ["Yes", "No"]
         },
         {
+          "Q-num": "0-3",
           "type": "multi",
           "question": "what is your prefered brand ?",
           "choices": ["Samsung", "Apple", "Nokia", "Xiaomi", "Huawei"]
@@ -27,20 +30,24 @@
       "title": "Quality",
       "questions": [
         {
+          "Q-num": "1-1",
           "type": "single",
           "question": "Do you consider quality of a device regardless of its brand?",
           "choices": ["Yes", "No"]
         },
         {
+          "Q-num": "1-2",
           "type": "single",
           "question": "which one of this brands do you think is better than others in term of quality?",
           "choices": ["Samsung", "Apple", "Nokia", "Xiaomi", "Huawei"]
         },
         {
+          "Q-num": "1-3",
           "type": "text",
           "question": "Feel free to Mention Other brand.."
         },
         {
+          "Q-num": "1-4",
           "type": "single",
           "question": "Is it important for a device to have a Warranty?",
           "choices": ["Yes", "No"]
@@ -53,21 +60,24 @@
       "title": "Production",
       "questions": [
         {
+          "Q-num": "2-1",
           "type": "text",
           "question": "Could you please mention the device that you are using now ?"
         },
         {
+          "Q-num": "2-2",
           "type": "single",
           "question": "which one of this brands are using?",
           "choices": ["Samsung", "Apple", "Nokia", "Xiaomi", "Huawei"]
         },
-
         {
+          "Q-num": "2-3",
           "type": "single",
           "question": "are you satisfied with your current device?",
           "choices": ["Yes", "No"]
         },
         {
+          "Q-num": "2-4",
           "type": "text",
           "question": "if No why?"
         }
@@ -79,23 +89,63 @@
       "title": "Devices",
       "questions": [
         {
+          "Q-num": "3-1",
           "type": "text",
           "question": "Could you please mention the device that you are using now ?"
         },
         {
+          "Q-num": "3-2",
           "type": "single",
           "question": "which one of this brands are using?",
           "choices": ["Samsung", "Apple", "Nokia", "Xiaomi", "Huawei"]
         },
-
         {
+          "Q-num": "3-3",
           "type": "single",
           "question": "are you satisfied with your current device?",
           "choices": ["Yes", "No"]
         },
         {
+          "Q-num": "3-4",
           "type": "text",
           "question": "if No why?"
+        }
+      ]
+    },
+    {
+      "id": "devices",
+      "number": "4",
+      "title": "Devices",
+      "questions": [
+        {
+          "Q-num": "4-1",
+          "type": "single",
+          "question": "Do you consider the CPU of a device when you are buying ?",
+          "choices": ["Yes", "No"]
+        },
+        {
+          "Q-num": "4-2",
+          "type": "single",
+          "question": "Have you ever experienced lagging with your phone ?",
+          "choices": ["Yes", "No"]
+        },
+        {
+          "Q-num": "4-3",
+          "type": "single",
+          "question": "are you satisfied with your current device's CPU?",
+          "choices": ["Yes", "No"]
+        }
+      ]
+    },
+    {
+      "id": "Finish",
+      "number": "5",
+      "title": "Thank you",
+      "questions": [
+        {
+          "Q-num": "5-1",
+          "type": "text",
+          "question": "About to Finish. we would like to Thank yo for you time, if you think you need to leave a comment about the topic please let us know.. :)"
         }
       ]
     }

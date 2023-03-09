@@ -1,9 +1,32 @@
-.section{
-    display: none;
+.section {
+  display: none;
 }
-.active{
-    display: unset;
+.active {
+  display: unset;
 }
-input{
-    height: 35px;
+input {
+  width: 300px;
+  height: 35px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: none;
+  border: 1px solid slategrey;
+}
+input:focus {
+  border: 1px solid slategrey;
+  outline: 1px;
+}
+select {
+  border: 1px solid slategrey;
+  width: 200px;
+  height: 40px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 239, 239);
+  padding: 5px;
+  line-height: 2;
+  cursor: pointer;
+
 }
