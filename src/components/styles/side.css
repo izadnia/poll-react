@@ -1,0 +1,68 @@
+.column{
+  height: 100%;
+  width:100%;
+  background-color: rgb(221, 221, 221);
+  padding: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.step{
+  width: 90%;
+  position: relative;
+  height: 100%;
+  margin-top: 0.45rem;
+}
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 5px;
+  height: 60px;
+
+}
+.cover-text {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.text{
+  color:rgb(43, 95, 97);
+  font-family: 'tahoma';
+  font-size: 1rem;
+
+}
+.card:hover .text{
+  display: none;
+}
+.wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(240, 248, 255, 0);
+  background-color: aliceblue;
+  border-radius: 15px;
+}
+.card:hover .wrapper {
+  opacity: 0.35;
+  transform: perspective(900px) translateY(-10%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+.character {
+  width: 35px;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+.card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -60%, 100px);
+}
+
