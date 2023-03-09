@@ -1,34 +1,37 @@
 import React, { useEffect, useState } from "react";
-import Page1 from "./Page1";
+import PageQ from './PageQ';
 import SlidePage from "./SidePage";
 import "./styles/main.css";
 
 function Main() {
-  useEffect(() => {}, []);
+  let [status, setStatus] = useState(0);
+
+  useEffect(() => {
+  }, [status]);
 
   return (
     <div className="main">
       <div className="columns">
         <div className="questions">
-          <Page1 />
+          <PageQ props={status} />
           <div className="controllers">
-            <div>
-              <button onClick={() => console.log("hi")}> Start </button>
-            </div>
-            <div>
-              <button> Before </button>
-            </div>
-            <div>
-              <button> Next </button>
-            </div>
-
-            <div>
-              <button> Submit </button>
-            </div>
+            {status == 0 ? (
+              <div>
+                <button onClick={() => setStatus(1)}> Start </button>
+              </div>
+            ) : 
+            <><div>
+                <button onClick={() => setStatus(status = status - 1)}> Before </button>
+              </div><div>
+                  <button onClick={() => setStatus(status = status + 1)} > Next </button>
+                </div><div>
+                  <button> Submit </button>
+                </div></>
+            }
           </div>
         </div>
         <div className="Slide">
-          <SlidePage />
+          <SlidePage props={status} />
         </div>
       </div>
     </div>

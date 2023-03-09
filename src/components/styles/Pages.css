@@ -1,0 +1,9 @@
+.section{
+    display: none;
+}
+.active{
+    display: unset;
+}
+input{
+    height: 35px;
+}

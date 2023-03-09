@@ -1,0 +1,103 @@
+{
+  "QuestionQuery": [
+    {
+      "id": "general",
+      "number": "0",
+      "title": "General",
+      "questions": [
+        {
+          "type": "text",
+          "question": "Could you please mention the last device that you baught ?"
+        },
+        {
+          "type": "single",
+          "question": "have you ever taught about changing your phone?",
+          "choices": ["Yes", "No"]
+        },
+        {
+          "type": "multi",
+          "question": "what is your prefered brand ?",
+          "choices": ["Samsung", "Apple", "Nokia", "Xiaomi", "Huawei"]
+        }
+      ]
+    },
+    {
+      "id": "quality",
+      "number": "1",
+      "title": "Quality",
+      "questions": [
+        {
+          "type": "single",
+          "question": "Do you consider quality of a device regardless of its brand?",
+          "choices": ["Yes", "No"]
+        },
+        {
+          "type": "single",
+          "question": "which one of this brands do you think is better than others in term of quality?",
+          "choices": ["Samsung", "Apple", "Nokia", "Xiaomi", "Huawei"]
+        },
+        {
+          "type": "text",
+          "question": "Feel free to Mention Other brand.."
+        },
+        {
+          "type": "single",
+          "question": "Is it important for a device to have a Warranty?",
+          "choices": ["Yes", "No"]
+        }
+      ]
+    },
+    {
+      "id": "production",
+      "number": "2",
+      "title": "Production",
+      "questions": [
+        {
+          "type": "text",
+          "question": "Could you please mention the device that you are using now ?"
+        },
+        {
+          "type": "single",
+          "question": "which one of this brands are using?",
+          "choices": ["Samsung", "Apple", "Nokia", "Xiaomi", "Huawei"]
+        },
+
+        {
+          "type": "single",
+          "question": "are you satisfied with your current device?",
+          "choices": ["Yes", "No"]
+        },
+        {
+          "type": "text",
+          "question": "if No why?"
+        }
+      ]
+    },
+    {
+      "id": "devices",
+      "number": "3",
+      "title": "Devices",
+      "questions": [
+        {
+          "type": "text",
+          "question": "Could you please mention the device that you are using now ?"
+        },
+        {
+          "type": "single",
+          "question": "which one of this brands are using?",
+          "choices": ["Samsung", "Apple", "Nokia", "Xiaomi", "Huawei"]
+        },
+
+        {
+          "type": "single",
+          "question": "are you satisfied with your current device?",
+          "choices": ["Yes", "No"]
+        },
+        {
+          "type": "text",
+          "question": "if No why?"
+        }
+      ]
+    }
+  ]
+}
