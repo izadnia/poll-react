@@ -61,25 +61,20 @@
       "questions": [
         {
           "Q-num": "2-1",
-          "type": "text",
-          "question": "Could you please mention the device that you are using now ?"
-        },
-        {
-          "Q-num": "2-2",
           "type": "single",
-          "question": "which one of this brands are using?",
-          "choices": ["Samsung", "Apple", "Nokia", "Xiaomi", "Huawei"]
+          "question": "What kind of this devices do you use most?",
+          "choices": ["phone", "phablet", "tablet", "notbook", "labtop"]
         },
         {
           "Q-num": "2-3",
           "type": "single",
-          "question": "are you satisfied with your current device?",
+          "question": "are you satisfied with your device?",
           "choices": ["Yes", "No"]
         },
         {
           "Q-num": "2-4",
           "type": "text",
-          "question": "if No why?"
+          "question": "why?"
         }
       ]
     },
@@ -113,9 +108,9 @@
       ]
     },
     {
-      "id": "devices",
+      "id": "processor",
       "number": "4",
-      "title": "Devices",
+      "title": "Processor",
       "questions": [
         {
           "Q-num": "4-1",

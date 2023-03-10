@@ -43,7 +43,7 @@ function PageQ(status) {
                 <input id={q["Q-num"]}></input>
               ) : (
                 <select id={q["Q-num"]}>
-                  <option selected> </option>
+                  <option defaultValue> </option>
                   {q.choices.map((choice) => (
                     <option key={choice}>{choice}</option>
                   ))}
