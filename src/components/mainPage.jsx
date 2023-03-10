@@ -6,6 +6,26 @@ import "./styles/main.css";
 function Main() {
   let [status, setStatus] = useState(-1);
 
+  const targetDate = new Date().getTime() + 120000;
+
+  function countdown(){
+    setInterval(function () {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+      const mSeconds = Math.floor(((difference % (1000 * 60)) / 10) % 100);
+
+      document.getElementById("time").innerHTML =minutes + "m  " + seconds + "s  ";
+      document.getElementById("msec").innerHTML = mSeconds + "ms  ";
+  
+      if (difference < 0) {
+        clearInterval(countdown);
+        document.getElementById("time").innerHTML = "EXPIRED";
+        document.getElementById("msec").innerHTML = "";
+      }
+    }, 1);
+  };
 
   useEffect(() => {}, [status]);
 
@@ -13,13 +33,34 @@ function Main() {
     <div className="main">
       <div className="columns">
         <div className="questions">
-        <p>( 2min Countdown here)</p>
+          <p>
+            Poll Ends in <span  style={{color:'darkred'}} id="time">02:00 min</span><span style={{fontSize:'0.6rem',color:'darkred'}} id="msec"></span>
+          </p>
           <PageQ props={status} />
           <div className="controllers">
-            {(status == -1) ? <button onClick={() => setTimeout(()=>{setStatus(0) },2000)}> Start </button> : null}
-            {( 0< status && status < 6 ) ? <button onClick={() => setStatus((status = status - 1))}>Before</button>:null}
-            { (-1 < status && status < 5) ? <button onClick={() => setStatus((status = status + 1))}>Next</button>: null}
-            {(status == 5) ? <button> Submit </button> : null}
+            {status == -1 ? (
+              <button
+                onClick={() =>
+                  setTimeout(() => {
+                    setStatus(0);
+                    countdown()
+                  }, 1000)
+                }
+              >
+                Start
+              </button>
+            ) : null}
+            {0 < status && status < 6 ? (
+              <button onClick={() => setStatus((status = status - 1))}>
+                Before
+              </button>
+            ) : null}
+            {-1 < status && status < 5 ? (
+              <button onClick={() => setStatus((status = status + 1))}>
+                Next
+              </button>
+            ) : null}
+            {status == 5 ? <button> Submit </button> : null}
           </div>
         </div>
         <div className="Slide">
