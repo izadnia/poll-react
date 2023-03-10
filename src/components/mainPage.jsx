@@ -21,8 +21,8 @@ function Main() {
   
       if (difference < 0) {
         clearInterval(countdown);
-        document.getElementById("time").innerHTML = "EXPIRED";
-        document.getElementById("msec").innerHTML = "";
+        document.getElementById("col").innerHTML = "Time is up! we have recieved your answers! Thank you";
+
       }
     }, 1);
   };
@@ -31,7 +31,7 @@ function Main() {
 
   return (
     <div className="main">
-      <div className="columns">
+      <div id="col" className="columns">
         <div className="questions">
           <p>
             Poll Ends in <span  style={{color:'darkred'}} id="time">02:00 min</span><span style={{fontSize:'0.6rem',color:'darkred'}} id="msec"></span>
@@ -40,6 +40,7 @@ function Main() {
           <div className="controllers">
             {status == -1 ? (
               <button
+              style={{background:'darkgreen'}}
                 onClick={() =>
                   setTimeout(() => {
                     setStatus(0);
@@ -51,16 +52,16 @@ function Main() {
               </button>
             ) : null}
             {0 < status && status < 6 ? (
-              <button onClick={() => setStatus((status = status - 1))}>
+              <button style={{background:'gray'}} onClick={() => setStatus((status = status - 1))}>
                 Before
               </button>
             ) : null}
             {-1 < status && status < 5 ? (
-              <button onClick={() => setStatus((status = status + 1))}>
+              <button  onClick={() => setStatus((status = status + 1))}>
                 Next
               </button>
             ) : null}
-            {status == 5 ? <button> Submit </button> : null}
+            {status == 5 ? <button style={{background:'green'}}> Submit </button> : null}
           </div>
         </div>
         <div className="Slide">
