@@ -5,7 +5,8 @@
   display: unset;
 }
 input {
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
   height: 35px;
   padding: 15px;
   border-radius: 10px;
@@ -19,7 +20,8 @@ input:focus {
 }
 select {
   border: 1px solid slategrey;
-  width: 200px;
+  width: 100%;
+  max-width: 300px;
   height: 40px;
   font-size: 1rem;
   border: none;
@@ -30,3 +32,4 @@ select {
   cursor: pointer;
 
 }
+

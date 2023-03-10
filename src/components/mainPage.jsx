@@ -54,7 +54,7 @@ function Main() {
             ) : null}
             {0 < status && status < 6 ? (
               <button style={{background:'gray'}} onClick={() => setStatus((status = status - 1))}>
-                Before
+                Previous
               </button>
             ) : null}
             {-1 < status && status < 5 ? (
