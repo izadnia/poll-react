@@ -6,9 +6,10 @@ import "./styles/main.css";
 function Main() {
   let [status, setStatus] = useState(-1);
 
-  const targetDate = new Date().getTime() + 120000;
+  
 
   function countdown(){
+    let targetDate = new Date().getTime() + 120000;
     setInterval(function () {
       const now = new Date().getTime();
       const difference = targetDate - now;
