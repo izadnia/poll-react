@@ -9,7 +9,7 @@ function Main() {
 
 
   function countdown() {
-    let targetDate = new Date().getTime() + 12000;
+    let targetDate = new Date().getTime() + 120000;
     setInterval(function () {
       const now = new Date().getTime();
       const difference = targetDate - now;
