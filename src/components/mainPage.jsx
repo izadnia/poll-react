@@ -9,7 +9,7 @@ function Main() {
 
 
   function countdown() {
-    let targetDate = new Date().getTime() + 120000;
+    let targetDate = new Date().getTime() + 12000;
     setInterval(function () {
       const now = new Date().getTime();
       const difference = targetDate - now;
@@ -19,6 +19,7 @@ function Main() {
       if (difference < 0) {
           setStatus("submited") 
           setTimeout(()=>{
+            document.getElementById("time").innerHTML = "Finished"
           }, 1000)
       }
     }, 1000);
@@ -32,12 +33,7 @@ function Main() {
     <div className="main">
       <div id="col" className="columns">
         <div className="questions">
-          <p id="Timer">
-            Poll Ends in{" "}
-            <span style={{ color: "darkred" }} id="time">
-              02:00 min
-            </span>
-          </p>
+          <p id="Timer">Time : <span style={{ color: "darkred" }} id="time">02:00 min</span></p>
           <PageQ props={status} />
           <div className="controllers">
             {status == -1 ? (
