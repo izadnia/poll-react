@@ -1,5 +1,5 @@
 # poll-react
-A small Polling app 
+A small Polling app created with react js.
 
 check out the Demo : https://izadnia.com/demo/poll/
 
