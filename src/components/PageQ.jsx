@@ -74,7 +74,7 @@ let answers = {}
           ))}
         </div>
       ))}
-    { status.props == 'submited' ? (<div><p>We have recieved your data</p><br/><p> Thank you :) </p></div>) : null}
+    { status.props == 'submited' ? (<div><p>We have recieved your data</p><br/><p> check out Console by pressing F12 :) </p></div>) : null}
     </div>
   );
 }
