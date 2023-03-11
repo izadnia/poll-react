@@ -3,7 +3,28 @@ import "./styles/pages.css";
 import Questions from "../services/data.json";
 
 function PageQ(status) {
-  useEffect(() => {}, [status]);
+
+
+let answers = {}
+  function getAnswers(){
+    {Questions.QuestionQuery.map((data) => (
+        data.questions.map((q) => (
+              answers[q["Q-num"]] =  document.getElementById(q["Q-num"]).value)
+        ))
+      
+    )}
+    console.log(answers)
+  }
+
+
+  useEffect(() => {
+ 
+    {status.props == 'submited' ? getAnswers()  : null}
+    
+    
+  }, [status]);
+
+
   return (
     <div className="container">
       
@@ -53,6 +74,7 @@ function PageQ(status) {
           ))}
         </div>
       ))}
+    { status.props == 'submited' ? (<div><p>We have recieved your data</p><br/><p> Thank you :) </p></div>) : null}
     </div>
   );
 }
